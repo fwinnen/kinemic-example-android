@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GestureReceiver.iml" filepath="$PROJECT_DIR$/GestureReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kinemic-example-android.iml" filepath="$PROJECT_DIR$/kinemic-example-android.iml" />
     </modules>
   </component>
 </project>
