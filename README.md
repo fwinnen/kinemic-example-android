@@ -12,8 +12,7 @@ The 'Rotate RL' gesture opens a drawing activity (`MouseEventActivity`) which sh
 The code contains some comments which explain what's going on. For more detailed information see our [Toolbox](https://github.com/kinemic/kinemic-toolbox-android).
 
 # Trainer
-If you need help with the gestures, visit our online [Trainer](http://kinemic.com/gesture-trainer-dev). Simply connect it to your p
-Kinemic Publisher using the Settings page and you are ready to start!
+If you need help with the gestures, visit our online [Trainer](http://kinemic.com/gesture-trainer-dev). Simply connect it to your Kinemic Publisher using the Settings page and you are ready to start!
 
 # Support
 
