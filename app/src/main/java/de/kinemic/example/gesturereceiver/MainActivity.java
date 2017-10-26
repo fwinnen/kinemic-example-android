@@ -9,8 +9,8 @@ import org.json.JSONException;
 
 import java.util.Date;
 
-import de.kinemic.AdvancedGestureActivity;
-import de.kinemic.event.PublisherEvent;
+import de.kinemic.toolbox.AdvancedGestureActivity;
+import de.kinemic.toolbox.event.PublisherEvent;
 
 public class MainActivity extends AdvancedGestureActivity {
 

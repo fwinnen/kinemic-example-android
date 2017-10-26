@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 import org.json.JSONException;
 
-import de.kinemic.AdvancedGestureActivity;
-import de.kinemic.event.PublisherEvent;
+import de.kinemic.toolbox.AdvancedGestureActivity;
+import de.kinemic.toolbox.event.PublisherEvent;
 
 /**
  * An activity which lets you use the airmouse feature to draw on the screen.

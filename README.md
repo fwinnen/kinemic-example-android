@@ -1,21 +1,21 @@
-# kinemic-example-android
+# Kinemic Android Example / Starter
+This project is an example android application which shows how to interact with the [Kinemic Publisher](https://kinemic.de/evalpackage.html).
 
-This is an example android application which shows how to interact with the Kinemic Publisher.
-This project also provides some template and utility classes which can help you get started with a new android gesture enabled application.
-To start a new project based on this, simply clone this project. 
+The easiest way to get started is to simply clone this project and use it as a template for a new application.
+If you want to integrate gesture interaction into your existing application, use our [Toolbox](https://github.com/kinemic/kinemic-toolbox-android).
 
-## Structure
 
-The first activity (MainActivity) listens to some publisher events and updates some UI elements in it's response.
-The 'Rotate RL' gesture opens the drawing activity. The drawing activity shows you how to use the airmouse events.
+# Application
+The first activity (`MainActivity`) simply listens to publisher events and updates UI elements as a response to events.
+The 'Rotate RL' gesture opens a drawing activity (`MouseEventActivity`) which shows you how to use the airmouse feature.
 
-## Templates
+The code contains some comments which explain what's going on. For more detailed information see our [Toolbox](https://github.com/kinemic/kinemic-toolbox-android).
 
-Subclass the GestureActivity or AdvancedGestureActivity to build a gesture enabled activity. These activities manage 
-the connection to the publisher, and receive events from the stream.
+# Trainer
+If you need help with the gestures, visit our online [Trainer](http://kinemic.com/gesture-trainer-dev). Simply connect it to your p
+Kinemic Publisher using the Settings page and you are ready to start!
 
-### GestureActivity 
-This simler class used AndroidBroadcasts to communictate one way. This solution does not need zeromq.
+# Support
 
-### AdvancedGestureActivty
-The advanced template used zeromq directly to communicate with the publisher. It also provides a backchannel to reset the orientation. (IMPORTANT for irmouse usage). The advanced gesture activity also provides some settings (ip for publisher, ...) and can connect to any visible publisher in the current network.
+If you encounter any problems or need help, please don't hesitate to contact us
+at [support@kinemic.de](mailto:support@kinemic.de).
