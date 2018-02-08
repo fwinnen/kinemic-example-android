@@ -3,6 +3,9 @@ package de.kinemic.example.gesturereceiver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -30,6 +33,31 @@ public class MainActivity extends AdvancedGestureActivity {
         mLastInfo = (TextView) findViewById(R.id.meta_last_info);
         mActiveInfo = (TextView) findViewById(R.id.meta_active_info);
         mLastEventInfo = (TextView) findViewById(R.id.event_info);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.layout: {
+                    Intent intent = new Intent(this, LayoutActivity.class);
+                    startActivity(intent);
+                }
+                return true;
+            case R.id.drawing: {
+                    Intent intent = new Intent(this, MouseEventActivity.class);
+                    startActivity(intent);
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

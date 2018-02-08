@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="de.kinemic.example.gesturereceiver.LayoutActivity"
+    tools:showIn="@layout/activity_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gesture_root">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button 1"
+            android:id="@+id/button_1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2.1"
+            android:id="@+id/button_21"
+            android:layout_below="@id/button_1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2.2"
+            android:id="@+id/button_22"
+            android:layout_toRightOf="@id/button_21"
+            android:layout_alignTop="@id/button_21"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2.3"
+            android:id="@+id/button_23"
+            android:layout_toRightOf="@id/button_22"
+            android:layout_alignTop="@id/button_21"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3.1"
+            android:id="@+id/button_31"
+            android:layout_below="@id/button_21"
+            android:layout_alignLeft="@id/button_21"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3.2"
+            android:id="@+id/button_32"
+            android:layout_toRightOf="@id/button_31"
+            android:layout_alignTop="@id/button_31"
+            android:layout_alignLeft="@id/button_22"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3.3"
+            android:id="@+id/button_33"
+            android:layout_toRightOf="@id/button_32"
+            android:layout_alignTop="@id/button_32"
+            android:layout_alignLeft="@id/button_23"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button 4"
+            android:id="@+id/button_4"
+            android:layout_below="@id/button_31"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/button_4"
+            android:id="@+id/list_1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button 5"
+            android:id="@+id/button_5"
+            android:layout_below="@id/list_1"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/button_5"
+            android:id="@+id/list_2"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

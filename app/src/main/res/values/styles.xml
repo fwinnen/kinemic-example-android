@@ -6,6 +6,30 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:listViewStyle">@style/List</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Button" parent="Base.Widget.AppCompat.Button">
+        <item name="backgroundTint">@xml/button_tint</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="List" parent="Base.Widget.AppCompat.ListView">
+        <!--item name="android:background">@xml/list_bg</item-->
+        <item name="android:listSelector">@xml/list_selector</item>
+    </style>
+
+    <style name="ListItemFont" parent="@android:style/TextAppearance.Medium"> >
+        <item name="android:textColor">@xml/list_text_color_selector</item>
+    </style>
 </resources>

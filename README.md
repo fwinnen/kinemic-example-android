@@ -8,6 +8,7 @@ If you want to integrate gesture interaction into your existing application, use
 # Application
 The first activity (`MainActivity`) simply listens to publisher events and updates UI elements as a response to events.
 The 'Rotate RL' gesture opens a drawing activity (`MouseEventActivity`) which shows you how to use the airmouse feature.
+In the option menu there is a item to launch the `LayoutActivity` which demonstrates the capabilities of native android viewt-ree focus navigation.
 
 The code contains some comments which explain what's going on. For more detailed information see our [Toolbox](https://github.com/kinemic/kinemic-toolbox-android).
 
